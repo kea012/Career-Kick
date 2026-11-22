@@ -1,0 +1,35 @@
+# --- Web Server & Framework ---
+fastapi==0.115.11             # High-performance, async-native web framework
+uvicorn[standard]==0.34.0    # ASGI server to run the async application
+python-multipart>=0.0.7      # Required for multipart form uploads and file handling
+
+# --- Database Layer (Async PostgreSQL) ---
+asyncpg==0.30.0              # Blazing fast asynchronous PostgreSQL driver
+SQLAlchemy==2.0.38           # SQL toolkit and ORM with async capabilities
+alembic==1.14.1              # Database schema migrations management
+
+# --- Caching Layer (Async Redis) ---
+redis==5.2.1                 # In-memory cache client (features built-in async support)
+
+# --- Search & Discovery (Async Elasticsearch) ---
+elasticsearch==8.17.1        # Full-text search engine client (features AsyncElasticsearch)
+
+# --- Social Graph (Async Neo4j) ---
+neo4j==5.28.0                # Graph driver supporting async session contexts
+
+# --- Object Storage (Async S3 Operations) ---
+aioboto3==13.4.0             # Asynchronous wrapper for AWS S3 asset uploads
+
+# --- Event Broker (Async Kafka) ---
+aiokafka==0.12.0             # Asynchronous client for Kafka event streaming
+
+# --- AI Model ---
+google-genai>=1.0.0
+pydantic==2.10.0
+email-validator>=2.0.0
+python-dotenv>=1.0.0
+
+# --- Testing ---
+pytest==8.2.2
+pytest-asyncio==0.23.7
+httpx
